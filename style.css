@@ -1,0 +1,96 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "inter", sans-serif;
+}
+
+.display-flex {
+  display: flex;
+}
+
+.max-width {
+  max-width: 1140px;
+  margin: 0px auto;
+}
+
+.font_noto {
+  font-family: "Noto Serif", serif;
+}
+
+.s_desc {
+  font-size: 22px;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+span {
+  color: rgb(233, 90, 8);
+}
+
+
+/* header section styles */
+
+/* nav related styles */
+
+nav {
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 1.4em;
+  margin-bottom: 6.5em;
+}
+
+header ul {
+  gap: 30px;
+  list-style: none;
+}
+
+.n-bold {
+  font-weight: bold;
+}
+
+.n-dark-2 {
+  color: rgb(137, 135, 161);
+}
+
+/* banner related styles */
+
+.banner {
+  align-items: end;
+}
+
+.banner div {
+  max-width: 570%;
+}
+
+.banner-heading {
+  font-weight: bold;
+  font-size: 4em;
+}
+
+/* Responsive design for mobile device */
+
+@media screen and (max-width: 576px) {
+
+    body{
+        margin-bottom: 40px;
+    }
+
+    nav {
+        margin:15px;
+    }
+
+  nav ul li:nth-child(1),
+  nav ul li:nth-child(2),
+  nav ul li:nth-child(3) {
+    display: none;
+  }
+
+  .banner{
+    flex-direction: column-reverse;
+    gap:30px
+  }
+
+  .banner img{
+    width: 100%;
+  }
+}
