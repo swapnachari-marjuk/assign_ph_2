@@ -88,6 +88,10 @@ header ul {
   margin: 15px auto;
 }
 
+.h_title {
+  font-size: 50px;
+}
+
 .ps_cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -121,7 +125,7 @@ header ul {
   position: relative;
 }
 
-.f-img-box img:nth-child(1) {
+.f-img-box img {
   display: block;
   width: 100%;
 }
@@ -132,9 +136,8 @@ header ul {
 
 .b-img {
   position: absolute;
-  top: -130px;
-  right: -90px;
-  width: 10px;
+  top: -24%;
+  right: -20%;
 }
 
 .fl-content-box {
@@ -218,14 +221,52 @@ header ul {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
-  background-image: url(./assets/deal-zabo.png);}
+  background-image: url(./assets/deal-zabo.png);
+}
+
+/* join section related styles */
+
+.join-section{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: aqua;
+   margin: 50px auto;
+  background-image: url(./assets/news-letter-bg.png);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat; 
+}
+
+.join-box{
+  color: #ffffff;
+  margin: 150px;
+  text-align: center;
+}
+
+.join-box h2{
+  margin-bottom: 15px;
+  font-size: 50px;
+}
+
+.join-box input{
+  width: 39em;
+  height: 3.4em;
+  padding: 1.3em;
+  outline: none;
+  border: none;
+  position: relative;
+  left: 2.5%;
+}
+
 
 /* Responsive design for mobile device */
 
 @media screen and (max-width: 576px) {
- body {
+  body {
     margin-bottom: 40px;
-    margin: auto 15px;
+    margin: auto 10px;
   }
 
   nav ul li:nth-child(1),
@@ -235,8 +276,8 @@ header ul {
   }
 
   button {
-  padding: 10px 30px;
-}
+    padding: 10px 30px;
+  }
 
   .banner {
     flex-direction: column-reverse;
@@ -244,7 +285,10 @@ header ul {
   }
 
   .banner-heading,
-  .fls-title {
+  .fls-title,
+  .ld-title,
+  .h_title,
+  .join-section > div h2 {
     font-size: 25px;
   }
 
@@ -266,8 +310,8 @@ header ul {
   }
 
   .deals_section {
-  grid-template-columns: 1fr;
-}
+    grid-template-columns: 1fr;
+  }
 
   .deals_right,
   .left-1,
@@ -276,8 +320,35 @@ header ul {
     height: 180px;
   }
 
-  .deals_left{
+  .deals_left {
     gap: 0px;
   }
+
+  .join-section{
+    padding: 70px 36px 50px 36px;
+  }
+  .join-box{
+    margin:0px;
+  }
+
+  .join-box input{
+  width: 200px;
+  /* height: 3.5em; */
+  padding: 16px;
+  outline: none;
+}
+
+
+.join-box div{
+  display: flex;
+}
+
+.sub_btn{
+  padding: 10px;
+}
+
+  /* .join-box div {
+    text-align: left;
+  } */
 
 }
