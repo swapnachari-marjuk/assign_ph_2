@@ -172,7 +172,6 @@ header ul {
 .deals_section {
   display: grid;
   grid-template-columns: repeat(2, auto);
-  gap: 15px;
 }
 
 .deals_left {
@@ -231,7 +230,6 @@ header ul {
   display: flex;
   align-items: center;
   justify-content: center;
-  background-color: aqua;
    margin: 50px auto;
   background-image: url(./assets/news-letter-bg.png);
   background-size: cover;
@@ -261,12 +259,43 @@ header ul {
 }
 
 
+/* footer related styles */
+
+.footer{
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 80px;
+  margin:30px auto;
+}
+
+.footer-logo{
+  max-width: 360px;
+}
+
+.footer-option{
+  flex-direction: column;
+  gap: 30px;
+}
+
+footer a{
+  text-decoration: none;
+}
+
+.footer-icons img{
+  margin: 10px;
+}
+
 /* Responsive design for mobile device */
 
 @media screen and (max-width: 576px) {
-  body {
-    margin-bottom: 40px;
-    margin: auto 10px;
+
+
+  .banner_text{
+    margin-left: 3%;
+  }
+
+  .main{
+    margin: auto 3%;
   }
 
   nav ul li:nth-child(1),
@@ -311,17 +340,18 @@ header ul {
 
   .deals_section {
     grid-template-columns: 1fr;
+    gap: 10px;
   }
 
   .deals_right,
   .left-1,
   .left-2 {
-    width: 300px;
+    width: 100%;
     height: 180px;
   }
 
   .deals_left {
-    gap: 0px;
+    gap: 10px;
   }
 
   .join-section{
@@ -347,8 +377,15 @@ header ul {
   padding: 10px;
 }
 
-  /* .join-box div {
-    text-align: left;
-  } */
+.footer{
+  grid-template-columns: 1fr;
+  gap: 0px;
+  margin: auto 3%;
+}
+
+.footer-logo,
+.footer-option{
+  margin-bottom: 30px;
+}
 
 }
