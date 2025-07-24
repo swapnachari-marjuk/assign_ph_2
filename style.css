@@ -225,30 +225,30 @@ header ul {
 
 /* join section related styles */
 
-.join-section{
+.join-section {
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-   margin: 50px auto;
+  margin: 50px auto;
   background-image: url(./assets/news-letter-bg.png);
   background-size: cover;
   background-position: center;
-  background-repeat: no-repeat; 
+  background-repeat: no-repeat;
 }
 
-.join-box{
+.join-box {
   color: #ffffff;
   margin: 150px;
   text-align: center;
 }
 
-.join-box h2{
+.join-box h2 {
   margin-bottom: 15px;
   font-size: 50px;
 }
 
-.join-box input{
+.join-box input {
   width: 39em;
   height: 3.4em;
   padding: 1.3em;
@@ -258,43 +258,40 @@ header ul {
   left: 2.5%;
 }
 
-
 /* footer related styles */
 
-.footer{
+.footer {
   display: grid;
-  grid-template-columns: repeat(4,1fr);
+  grid-template-columns: repeat(4, 1fr);
   gap: 80px;
-  margin:30px auto;
+  margin: 30px auto;
 }
 
-.footer-logo{
+.footer-logo {
   max-width: 360px;
 }
 
-.footer-option{
+.footer-option {
   flex-direction: column;
   gap: 30px;
 }
 
-footer a{
+footer a {
   text-decoration: none;
 }
 
-.footer-icons img{
+.footer-icons img {
   margin: 10px;
 }
 
 /* Responsive design for mobile device */
 
 @media screen and (max-width: 576px) {
-
-
-  .banner_text{
+  .banner_text {
     margin-left: 3%;
   }
 
-  .main{
+  .main {
     margin: auto 3%;
   }
 
@@ -354,38 +351,36 @@ footer a{
     gap: 10px;
   }
 
-  .join-section{
+  .join-section {
     padding: 70px 36px 50px 36px;
   }
-  .join-box{
-    margin:0px;
+  .join-box {
+    margin: 0px;
   }
 
-  .join-box input{
-  width: 200px;
-  /* height: 3.5em; */
-  padding: 16px;
-  outline: none;
-}
+  .join-box input {
+    width: 200px;
+    /* height: 3.5em; */
+    padding: 16px;
+    outline: none;
+  }
 
+  .join-box div {
+    display: flex;
+  }
 
-.join-box div{
-  display: flex;
-}
+  .sub_btn {
+    padding: 10px;
+  }
 
-.sub_btn{
-  padding: 10px;
-}
+  .footer {
+    grid-template-columns: 1fr;
+    gap: 0px;
+    margin: auto 3%;
+  }
 
-.footer{
-  grid-template-columns: 1fr;
-  gap: 0px;
-  margin: auto 3%;
-}
-
-.footer-logo,
-.footer-option{
-  margin-bottom: 30px;
-}
-
+  .footer-logo,
+  .footer-option {
+    margin-bottom: 30px;
+  }
 }
