@@ -27,14 +27,13 @@ span {
   color: rgb(233, 90, 8);
 }
 
-button{
-    font-weight: 600;
-    color: #ffffff;
-    background-color: rgb(233, 90, 8);
-    padding: 15px 50px ;
-    border: none;
+button {
+  font-weight: 600;
+  color: #ffffff;
+  background-color: rgb(233, 90, 8);
+  padding: 15px 50px;
+  border: none;
 }
-
 
 /* header section styles */
 
@@ -59,8 +58,6 @@ header ul {
   color: rgb(137, 135, 161);
 }
 
-
-
 /* banner related styles */
 
 .banner {
@@ -81,90 +78,155 @@ header ul {
 
 /* plant section related styles */
 
-.m_heading{
-    text-align: center;
-    max-width: 890px;
-    margin: auto;
+.m_heading {
+  text-align: center;
+  max-width: 890px;
+  margin: auto;
 }
 
-.m_heading .s_desc{
-    margin: 15px auto;
+.m_heading .s_desc {
+  margin: 15px auto;
 }
 
-.ps_cards{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    gap: 20px 15px;
-    margin: 25px auto;
+.ps_cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px 15px;
+  margin: 25px auto;
 }
 
-.p_card{
-    gap: 15px;
-    flex-direction: column;
-    text-align: center;
+.p_card {
+  gap: 15px;
+  flex-direction: column;
+  text-align: center;
 }
 
-.p_card img{
-    width: 100%;
+.p_card img {
+  width: 100%;
 }
 
-.btn-1{
-    flex: 1;
+.btn-1 {
+  flex: 1;
 }
 
 /* flower lover section related */
 
-.f_lovers{
+.f_lovers {
   align-items: center;
   gap: 40px;
   margin: 250px auto 90px auto;
 }
 
-.f-img-box{
+.f-img-box {
   position: relative;
 }
 
-.f-img-box img:nth-child(1){
+.f-img-box img:nth-child(1) {
   display: block;
   width: 100%;
 }
-.badge-box img:nth-child(1){
+.badge-box img:nth-child(1) {
   display: block;
   width: 50%;
 }
 
-.b-img {  
+.b-img {
   position: absolute;
   top: -130px;
   right: -90px;
   width: 10px;
 }
 
-.fl-content-box{
+.fl-content-box {
   max-width: 540px;
 }
 
-.fls-title{
+.fls-title {
   font-weight: bold;
   font-size: 3.3em;
 }
 
-.fl-content-box ul{
+.fl-content-box ul {
   margin-left: 25px;
 }
 
-.fl-content-box ul li{
+.fl-content-box ul li {
   margin: 20px auto;
 }
+
+/* latest deal section related styles */
+
+.ld-heading {
+  text-align: center;
+  max-width: 885px;
+  margin: auto auto 80px auto;
+}
+
+.ld-title {
+  font-size: 50px;
+}
+
+.deals_section {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  gap: 15px;
+}
+
+.deals_left {
+  flex-direction: column;
+  gap: 15px;
+}
+
+.left-1,
+.left-2 {
+  color: #ffffff;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  width: 360px;
+  height: 200px;
+  border-radius: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.left-1 a,
+.left-2 a,
+.deals_right a {
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 16px;
+}
+
+.left-1 {
+  background-image: url(./assets/deal-bloom.png);
+}
+
+.left-2 {
+  background-image: url(./assets/deal-ana.png);
+}
+
+.deals_right {
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  text-align: center;
+  width: 750px;
+  height: 425px;
+  border-radius: 15px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-image: url(./assets/deal-zabo.png);}
 
 /* Responsive design for mobile device */
 
 @media screen and (max-width: 576px) {
-
-    body{
-        margin-bottom: 40px;
-        margin: auto 15px;
-    }
+ body {
+    margin-bottom: 40px;
+    margin: auto 15px;
+  }
 
   nav ul li:nth-child(1),
   nav ul li:nth-child(2),
@@ -172,30 +234,50 @@ header ul {
     display: none;
   }
 
-  .banner{
+  button {
+  padding: 10px 30px;
+}
+
+  .banner {
     flex-direction: column-reverse;
-    gap:20px
+    gap: 20px;
   }
 
   .banner-heading,
-  .fls-title{
+  .fls-title {
     font-size: 25px;
   }
 
-  .banner img{
+  .banner img {
     width: 100%;
   }
 
-  .ps_cards{
-    grid-template-columns: repeat(2,1fr);
+  .ps_cards {
+    grid-template-columns: repeat(2, 1fr);
   }
 
-  .f_lovers{
+  .f_lovers {
     flex-direction: column;
     margin-top: 40px;
   }
 
-  .badge-box img:nth-child(1){
+  .badge-box img:nth-child(1) {
     display: none;
   }
+
+  .deals_section {
+  grid-template-columns: 1fr;
+}
+
+  .deals_right,
+  .left-1,
+  .left-2 {
+    width: 300px;
+    height: 180px;
+  }
+
+  .deals_left{
+    gap: 0px;
+  }
+
 }
