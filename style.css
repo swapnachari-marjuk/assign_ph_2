@@ -112,6 +112,51 @@ header ul {
     flex: 1;
 }
 
+/* flower lover section related */
+
+.f_lovers{
+  align-items: center;
+  gap: 40px;
+  margin: 250px auto 90px auto;
+}
+
+.f-img-box{
+  position: relative;
+}
+
+.f-img-box img:nth-child(1){
+  display: block;
+  width: 100%;
+}
+.badge-box img:nth-child(1){
+  display: block;
+  width: 50%;
+}
+
+.b-img {  
+  position: absolute;
+  top: -130px;
+  right: -90px;
+  width: 10px;
+}
+
+.fl-content-box{
+  max-width: 540px;
+}
+
+.fls-title{
+  font-weight: bold;
+  font-size: 3.3em;
+}
+
+.fl-content-box ul{
+  margin-left: 25px;
+}
+
+.fl-content-box ul li{
+  margin: 20px auto;
+}
+
 /* Responsive design for mobile device */
 
 @media screen and (max-width: 576px) {
@@ -132,11 +177,25 @@ header ul {
     gap:20px
   }
 
+  .banner-heading,
+  .fls-title{
+    font-size: 25px;
+  }
+
   .banner img{
     width: 100%;
   }
 
   .ps_cards{
     grid-template-columns: repeat(2,1fr);
+  }
+
+  .f_lovers{
+    flex-direction: column;
+    margin-top: 40px;
+  }
+
+  .badge-box img:nth-child(1){
+    display: none;
   }
 }
